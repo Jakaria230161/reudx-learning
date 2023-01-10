@@ -1,6 +1,7 @@
 // Defining constants
 const INCREMENT = 'INCREMENT';
 const DECREMENT = 'DECREMENT';
+const ADD_USER = 'ADD_USER';
 
 // State - apni ja niye kaj korte chachen tai state
 const initialCounterState = {
@@ -29,3 +30,19 @@ const decrementCoUnter = () => {
   };
 };
 
+// PayLoad - add user(action) notun user er data dekhate hoile use kora lage(payLoad)
+
+const addUser = () => {
+  return{
+    type: ADD_USER,
+    payload: {name: "Imran"}
+  };
+};
+
+// Redux requirements
+/* 
+1, State
+2, dispatch an action > type > Increment or decrement and payload.
+3,reducer > update
+4, store > update in the view
+*/
