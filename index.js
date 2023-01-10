@@ -82,6 +82,15 @@ store.dispatch(incrementCounter())
 store.dispatch(incrementCounter())
 store.dispatch(decrementCounter())
 
+/* 
+CONSOLE LOG RESULT
+PS C:\Projects\Redux-learning> node index.js    
+{ count: 1, users: '' }
+{ count: 2, users: '' }
+{ count: 3, users: '' }
+{ count: 2, users: '' }
+*/
+
 
 // Redux requirements
 /* 
